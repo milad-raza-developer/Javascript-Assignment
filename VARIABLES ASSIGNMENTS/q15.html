@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Q15</title>
+</head>
+<body>
+    <script>
+        var favSnack = prompt("Enter your favorite snack");
+
+        var cuAge = parseFloat(prompt("Enter your current age"));
+
+        var maxAge = parseFloat(prompt("Enter your maximum age"));
+
+        var estimate = parseFloat(prompt("Enter your estimated amount of snack per day"));
+
+        var calc = (maxAge - cuAge) * estimate;
+
+        document.write("<br /><hr />Favorite Snack : "+favSnack);
+
+        document.write("<br />Current Age : "+cuAge);
+
+        document.write("<br />Esimated Maximum Age : "+maxAge);
+
+        document.write("<br />Amount of snacks per day : "+estimate);
+
+        document.write("<br /><br />You will need " + calc + " " + favSnack + " to last you will ripe old age of " + maxAge);
+    </script>
+</body>
+</html>

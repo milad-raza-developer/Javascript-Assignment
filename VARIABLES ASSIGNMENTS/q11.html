@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Q11</title>
+</head>
+<body>
+    <script>
+        var currentYear = parseFloat(prompt("Enter The Current Year"));
+
+        var birthYear = parseFloat(prompt("Enter Your Birth Year"));
+
+        var ageOfPerson = currentYear - birthYear;
+
+        document.write("<br /><hr />Current Year : "+currentYear+"<br />Birth Year : "+birthYear+"<br /><br /> They are either "+ageOfPerson);
+
+        ageOfPerson = ++ageOfPerson;
+
+        document.write("or "+ageOfPerson+" years old");
+
+    </script>
+</body>
+</html>

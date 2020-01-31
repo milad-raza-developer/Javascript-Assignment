@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Q7</title>
+</head>
+<body>
+    <script>
+        var p1Item = parseFloat(prompt("Enter the price of Item1"));
+
+        var orderQuantityItem1 = parseFloat(prompt("Enter the quantity of Item1"));
+
+        var p2Item = parseFloat(prompt("Enter the price of Item2"));
+
+        var orderQuantityItem2 = parseFloat(prompt("Enter the quantity of Item2"));
+
+        var shippingCharges = parseFloat(prompt("Enter the shipping charges"));
+
+        var amountOf1 = p1Item * orderQuantityItem1;
+
+        var amountOf2 = p2Item * orderQuantityItem2;
+
+        var total = amountOf1 + amountOf2 + shippingCharges;
+
+        document.write("<br /><hr />Price of item 1 is : "+p1Item);
+
+        document.write("<br />Quantity of item 1 is : "+orderQuantityItem1);
+
+        document.write("<br /><br/>Price of item 2 is : "+p2Item);
+
+        document.write("<br />Quantity of item 2 is : "+orderQuantityItem2);
+
+        document.write("<br /><br />Shipping Charges : "+shippingCharges);
+
+        document.write("<br /><br /> Total cost of your order is "+total+" PKR");
+
+    </script>
+</body>
+</html>

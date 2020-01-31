@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Q6</title>
+</head>
+<body>
+    <script>
+        var celcius = prompt("Give Celcius temprature to convert Fahrenheit");
+
+        var convertCToF = (celcius * 9 / 5) + 32;
+
+        var fahrenheit = prompt("Give Fahrenheit temprature to convert Celcius");
+
+        var convertFToC = (fahrenheit - 32) * 5 / 9;
+
+        document.write("<br /> <hr />"+celcius+"C is "+convertCToF+"F");
+        
+        document.write("<br />"+fahrenheit+"F is "+convertFToC+"C");
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Q9</title>
+</head>
+<body>
+    <script>
+        var US = parseFloat(prompt("Enter amount in US Dollar"));
+
+        var saudiRiyal = parseFloat(prompt("Enter amount in Saudi Riyal"));
+
+        var USToPK = US * 154.88;
+
+        var riyalToPK = saudiRiyal * 41.28;
+
+        var total = USToPK + riyalToPK;
+
+        document.write("<br /><hr />"+US+" US Dollar convert to : "+USToPK+" PKR");
+        
+        document.write("<br />"+saudiRiyal+" Saudi Riyal convert to : "+riyalToPK+" PKR");
+        
+        document.write("<br /><br />Total Of Both above: "+total+" PKR");
+    </script>
+</body>
+</html>
