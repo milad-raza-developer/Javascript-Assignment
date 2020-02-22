@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-        table{
-            border-collapse: collapse;
-            width: 700px
-        }
-        button{
-            /* border: none; */
-            width: 100px;
-        }
-        td{
-            text-align: center;
-        }
-        th{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #head_tr{
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            
-        }
-        .hide_claa{
-            display: none;
-        }
+      table {
+        width: 700px;
+        margin-top: 20px;
+      }
+      button {
+        width: 100px;
+      }
+      td {
+        text-align: center;
+      }
+      #head_tr {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+      .hide {
+        display: none;
+      }
+      .show {
+        visibility: visible;
+      }
+      .lables {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .add_div {
+        margin-top: 10px;
+      }
     </style>
-</head>
-<body>
-    <table>
-        <thead>
-            <tr id="head_tr">
-                <th>INDEX NO</th>
-                <th>NAME</th>
-                <th>CLASS</th>
-                <th colspan="2">ACTION</th>
-            </tr>
-        </thead>
-        <tbody id="table_body">
+  </head>
+  <body>
+    <div id="add_div">
+      <label class="lables">Name</label>
 
-        </tbody>
+      <input type="text" id="add_name_input" />
+
+      <label class="lables">Class</label>
+
+      <input type="number" id="add_class_input" />
+
+      <button onclick="add()" id="add_btn">Add</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr id="head_tr">
+          <th>INDEX NO</th>
+          <th>NAME</th>
+          <th>CLASS</th>
+          <th colspan="2">ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="table_body"></tbody>
     </table>
-    <span id="edit_span"></span>
+
     <script src="./index.js"></script>
-    
-</body>
+  </body>
 </html>
