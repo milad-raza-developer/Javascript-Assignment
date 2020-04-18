@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter # 43 TO 48</title>
+    <style>
+      .images {
+        height: 100px;
+      }
+
+      .image_div {
+        display: flex;
+      }
+
+      table {
+        width: 700px;
+        margin-top: 20px;
+      }
+
+      button {
+        width: 100px;
+      }
+
+      td {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!---------------------------------------------------------Q1 & Q2--------------------------------------------->
+    <!-- Show an alert box on click on a link. -->
+    <!-- Display some Mobile images in browser. On click on an image Show the message in alert to user.  -->
+    <!---------------------------------------------------------Q1 & Q2--------------------------------------------------->
+
+    <div class="image_div">
+      <figure class="figure">
+        <img
+          src="./images/mob1.jpg"
+          alt="mobile Picture"
+          class="images"
+          onclick="popup()"
+        />
+        <br />
+        <figcaption>
+          Samsung J5
+        </figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img
+          src="./images/mob2.jpg"
+          alt="mobile Picture"
+          class="images"
+          onclick="popup()"
+        />
+        <br />
+        <figcaption>
+          samsung S6
+        </figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img
+          src="./images/mob3.jpg"
+          alt="mobile Picture"
+          class="images"
+          onclick="popup()"
+        />
+        <br />
+        <figcaption>
+          vivo Y9
+        </figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img
+          src="./images/mob4.jpg"
+          alt="mobile Picture"
+          class="images"
+          onclick="popup()"
+        />
+        <br />
+        <figcaption>
+          Oppo A3
+        </figcaption>
+      </figure>
+    </div>
+
+    <!---------------------------------------------------------Q3--------------------------------------------->
+    <!-- Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted.  -->
+    <!---------------------------------------------------------Q3--------------------------------------------->
+
+    <table>
+      <thead>
+        <tr>
+          <th>INDEX NO</th>
+          <th>NAME</th>
+          <th>CLASS</th>
+          <th colspan="2">ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="table_body"></tbody>
+    </table>
+
+    <!---------------------------------------------------------Q4--------------------------------------------->
+    <!-- Display an image in browser. Change the picture on mouseover and set the first picture on mouseout. -->
+    <!---------------------------------------------------------Q4--------------------------------------------->
+
+    <img
+      src="./images/mob3.jpg"
+      onMouseover="src='./images/mob4.jpg'"
+      onMouseout="src='./images/mob3.jpg'"
+    />
+
+    <!---------------------------------------------------------Q5--------------------------------------------->
+    <!-- Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser.  -->
+    <!---------------------------------------------------------Q5--------------------------------------------->
+    <br />
+    <br />
+    <br />
+    <div>
+      <button onclick="count('less')">-</button>
+      <span id="counter_span">0</span>
+      <button onclick="count('add')">+</button>
+    </div>
+  </body>
+  <script src="./events1.js"></script>
+</html>

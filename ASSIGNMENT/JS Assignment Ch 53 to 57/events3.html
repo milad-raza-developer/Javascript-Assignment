@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter # 53 TO 57</title>
+    <style>
+      #head {
+        text-align: center;
+      }
+
+      .image-box {
+        padding: 10px;
+        margin: 10px;
+        border: 5px solid #333;
+        cursor: pointer;
+        height: 180px;
+        width: 300px;
+      }
+
+      .image-box img{
+        height: 180px;
+        width: 300px;
+      }
+
+      .gallary {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      /* Modal starts */
+
+      /* The Modal (background) */
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 500;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      .modal-show {
+        /* display: none; */
+        position: fixed;
+        z-index: 500;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      /* Modal Content (image) */
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      /* Add Animation - Zoom in the Modal */
+
+      .modal-open {
+        animation-name: zoomIn;
+        animation-duration: 0.6s;
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .modal-close {
+        animation-name: zoomOut;
+        animation-duration: 0.6s;
+      }
+
+      @keyframes zoomOut {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+
+      /* The Close Button */
+
+      .close {
+        position: absolute;
+        top: 50px;
+        right: 10%;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: normal;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* modal ends */
+    </style>
+  </head>
+  <body>
+    <!---------------------------------------------------------Q1--------------------------------------------->
+    <!-- Consider you have 4 images in a file as shown below -->
+    <!---------------------------------------------------------Q1--------------------------------------------->
+
+    <header id="head">
+      <h1>Image Gllary</h1>
+    </header>
+
+    <section>
+      <ul class="gallary" id="ul">
+        
+      </ul>
+    </section>
+
+    <div class="modal" id="modal_div">
+      <img src="./images/2.jpg" class="modal-content" id="modalImage" />
+      <button class="close" onclick="closeModal()">*</button>
+    </div>
+
+    <!-------------------------------------------------------Q2--------------------------------------------->
+    <!-- Create a paragraph and two buttons “zoom in ”(+) and “zoom out”(-). On each click on “zoom in”(+) , add 10px in font size of paragraph. And on each click on “zoom out”(-) , minus 10px in font size of paragraph. -->
+    <!-------------------------------------------------------Q2--------------------------------------------->
+
+    <!-- <p id="fontPara">
+      You’re working on a paper and you’ve just written a line that seems kind
+      of familiar. Did you read it somewhere while you were researching the
+      topic? If you did, does that count as plagiarism? Now that you’re looking
+      at it, there are a couple of other lines that you know you borrowed from
+      somewhere. You didn’t bother with a citation at the time because you
+      weren’t planning to keep them. But now they’re an important part of your
+      paper. Is it still plagiarism if you’re using less than a paragraph? Using
+      someone else’s text without attribution is plagiarism, whether you meant
+      to do it or not. Unintentional plagiarism of even a sentence or two can
+      have serious consequences. For students, plagiarism often means a failing
+      grade, academic probation, or worse. Fortunately, there is a tool that can
+      help. Grammarly’s online plagiarism checker can help you ensure that you
+      have properly identified and cited anything in your text that isn’t 100
+      percent original. We originally designed our online plagiarism checker for
+      students, but it’s a useful tool for writers in any field who want to
+      create fresh, original, plagiarism-free work
+    </p>
+    <button onclick="fontSize('-')">-</button>
+    <button onclick="fontSize('+')">+</button> -->
+  </body>
+  <script src="./events3.js"></script>
+</html>

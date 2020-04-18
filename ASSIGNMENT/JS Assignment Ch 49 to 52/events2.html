@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter # 49 TO 52</title>
+    <style>
+      
+      table {
+        width: 700px;
+        margin-top: 20px;
+      }
+      button {
+        width: 100px;
+      }
+      td {
+        text-align: center;
+      }
+      #head_tr {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+      .hide {
+        display: none;
+      }
+      .show {
+        visibility: visible;
+      }
+      .lables {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .add_div {
+        margin-top: 10px;
+      }
+      .paragraph {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+      }
+      .morebtn {
+        display: block;
+        margin-left: 50px;
+      }
+      .showPara {
+        /* margin-left: 450px; */
+        width: 300px;
+        overflow: visible;
+      }
+      .none {
+        display: none;
+      }
+      .sortbtn {
+        display: none;
+      }
+      .visible {
+        visibility: visible;
+      }
+      .sort {
+        display: block;
+        margin-left: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <!---------------------------------------------------------Q1--------------------------------------------->
+    <!--------------------------------------------------LEAVE IN CHOICE -------------------------------------->
+    <!---------------------------------------------------------Q1--------------------------------------------->
+
+    <!---------------------------------------------------------Q2--------------------------------------------->
+    <!-- Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed. -->
+    <!---------------------------------------------------------Q2--------------------------------------------->
+    <div id="paraDiv">
+      <p class="paragraph" id="para">
+        You’re working on a paper and you’ve just written a line that seems kind
+        of familiar. Did you read it somewhere while you were researching the
+        topic? If you did, does that count as plagiarism? Now that you’re
+        looking at it, there are a couple of other lines that you know you
+        borrowed from somewhere. You didn’t bother with a citation at the time
+        because you weren’t planning to keep them. But now they’re an important
+        part of your paper. Is it still plagiarism if you’re using less than a
+        paragraph? Using someone else’s text without attribution is plagiarism,
+        whether you meant to do it or not. Unintentional plagiarism of even a
+        sentence or two can have serious consequences. For students, plagiarism
+        often means a failing grade, academic probation, or worse. Fortunately,
+        there is a tool that can help. Grammarly’s online plagiarism checker can
+        help you ensure that you have properly identified and cited anything in
+        your text that isn’t 100 percent original. We originally designed our
+        online plagiarism checker for students, but it’s a useful tool for
+        writers in any field who want to create fresh, original, plagiarism-free
+        work
+      </p>
+      <div>
+        <button class="morebtn" id="viewBtn" onclick="viewMore()">View More</button>
+        <button onclick="sort()" class="sortbtn" id="sortBtn">sort Para</button>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!---------------------------------------------------------Q3--------------------------------------------->
+    <!-- Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed. -->
+    <!---------------------------------------------------------Q3--------------------------------------------->
+    <div id="add_div">
+      <label class="lables">Name</label>
+
+      <input type="text" id="add_name_input" />
+
+      <label class="lables">Class</label>
+
+      <input type="number" id="add_class_input" />
+
+      <button onclick="add()" id="add_btn">Add</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr id="head_tr">
+          <th>INDEX NO</th>
+          <th>NAME</th>
+          <th>CLASS</th>
+          <th colspan="2">ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="table_body"></tbody>
+    </table>
+
+
+
+  </body>
+  <script src="./events2.js"></script>
+</html>
